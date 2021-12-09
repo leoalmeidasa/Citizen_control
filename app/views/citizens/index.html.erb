@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Citizens</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Cpf</th>
+      <th>Cns</th>
+      <th>Email</th>
+      <th>Birth date</th>
+      <th>Telephone</th>
+      <th>Status</th>
+      <th>Photo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @citizens.each do |citizen| %>
+      <tr>
+        <td><%= citizen.name %></td>
+        <td><%= citizen.cpf %></td>
+        <td><%= citizen.cns %></td>
+        <td><%= citizen.email %></td>
+        <td><%= citizen.birth_date %></td>
+        <td><%= citizen.telephone %></td>
+        <td><%= citizen.status %></td>
+        <td><%= image_tag citizen.photo, size:'50x50' if citizen.photo.attached? %></td>
+        <td><%= link_to 'Show', citizen %></td>
+        <td><%= link_to 'Edit', edit_citizen_path(citizen) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Citizen', new_citizen_path %>
