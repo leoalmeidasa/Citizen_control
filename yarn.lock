@@ -1267,6 +1267,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@popperjs/core@npm:2.0.0-alpha.1":
+  version: 2.0.0-alpha.1
+  resolution: "@popperjs/core@npm:2.0.0-alpha.1"
+  checksum: 531534f7b0435c72ca2d084413b352a23db9e95e7bcfd21dbefad3fea209db8d926de88d88a12ab337c7b9876d9ba01d3985fc0d46ffc88638374aaa275ead9a
+  languageName: node
+  linkType: hard
+
 "@rails/actioncable@npm:^6.0.0":
   version: 6.1.4
   resolution: "@rails/actioncable@npm:6.1.4"
@@ -2108,6 +2115,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bootstrap@npm:5.0.0-beta2":
+  version: 5.0.0-beta2
+  resolution: "bootstrap@npm:5.0.0-beta2"
+  peerDependencies:
+    "@popperjs/core": ^2.6.0
+  checksum: fcdeaf6d4a0518e3c6e1c72db739702c099b3f71d8002fb782653198acf7cdea73b362875c7a98321d1004f0e5a16a3f254762f3a49ee159310df10b55e637fe
+  languageName: node
+  linkType: hard
+
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
   resolution: "brace-expansion@npm:1.1.11"
@@ -2522,10 +2538,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "citizen-control@workspace:."
   dependencies:
+    "@popperjs/core": 2.0.0-alpha.1
     "@rails/actioncable": ^6.0.0
     "@rails/activestorage": ^6.0.0
     "@rails/ujs": ^6.0.0
     "@rails/webpacker": 5.4.3
+    bootstrap: 5.0.0-beta2
     turbolinks: ^5.2.0
     webpack: ^4.46.0
     webpack-cli: ^3.3.12

@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class CitizenTest < ActiveSupport::TestCase
+class CitizenMailerTest < ActionMailer::TestCase
   # test "the truth" do
   #   assert true
   # end
