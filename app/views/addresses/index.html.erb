@@ -1,8 +1,39 @@
-<p id="notice"><%= notice %></p>
+<header>
+  !-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" <%= link_to 'New Address', new_address_path %>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" <%= link_to 'Citizen', citizens_path %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<h1>Addresses</h1>
+  <div class="p-3 text-left bg-gradient">
+    <p id="notice"><%= notice %></p>
+    <h1 class="mb-3">Address</h1>
+  </div>
+</header>
 
-<table>
+<div class="table-responsive">
+  <table class="table table-striped">
   <thead>
     <tr>
       <th>Cep</th>
@@ -19,7 +50,7 @@
 
   <tbody>
     <% @addresses.each do |address| %>
-      <tr>
+      <tr class="table-info">
         <td><%= address.CEP %></td>
         <td><%= address.public_place %></td>
         <td><%= address.complement %></td>
@@ -35,8 +66,5 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'Citizen', citizens_path %>
-<%= link_to 'New Address', new_address_path %>
+</div>
+>
