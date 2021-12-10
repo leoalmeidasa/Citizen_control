@@ -48,7 +48,7 @@
 
   <div class="field">
     <%= form.label :citizen_id %>
-    <%= form.text_field :citizen_id %>
+    <%= form.collection_select(:citizen_id, Citizen.all, :id, :name, include_blank:true)%>
   </div>
 
   <div class="actions">
