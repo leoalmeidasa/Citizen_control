@@ -1,11 +1,55 @@
-<p id="notice"><%= notice %></p>
+<header>
+  !-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" <%= link_to 'New Citizen', new_citizen_path %>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" <%= link_to 'Address', addresses_path %>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" <%= link_to 'Back', citizens_path %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<h1>Citizens</h1>
+  <div class="p-3 text-left bg-gradient">
+    <p id="notice"><%= notice %></p>
+    <h1 class="mb-3">Citizens</h1>
+    <%= search_form_for @q do |f| %>
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.search_field :name_cont, class: 'form-control' %></div>
+      <div class="form-group"><%= f.check_box :status_true, include_hidden: false %>
+        <%= f.label :status, 'Active' %></div>
+      <%= link_to "Clear", request.path, class: "btn btn-default" %>
+      <%= f.submit class: 'btn btn-primary' %>
 
-<table>
+    <% end %>
+  </div>
+</header>
+
+<div class="table-responsive">
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Name</th>
+      <th >Name</th>
       <th>Cpf</th>
       <th>Cns</th>
       <th>Email</th>
@@ -19,7 +63,7 @@
 
   <tbody>
     <% @citizens.each do |citizen| %>
-      <tr>
+      <tr class="table-info">
         <td><%= citizen.name %></td>
         <td><%= citizen.cpf %></td>
         <td><%= citizen.cns %></td>
@@ -34,7 +78,4 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Citizen', new_citizen_path %>
+</div>
