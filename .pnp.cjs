@@ -35,10 +35,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@popperjs/core", "npm:2.0.0-alpha.1"],
             ["@rails/actioncable", "npm:6.1.4"],
             ["@rails/activestorage", "npm:6.1.4"],
             ["@rails/ujs", "npm:6.1.4"],
             ["@rails/webpacker", "npm:5.4.3"],
+            ["bootstrap", "virtual:a47e05dd1fd8db63d7735b455172b9cf128837ae13242d435e1aceb413b7c65b9be95497445a39cb9e3f21acb88bfa781a8d8050694ec67095cc1f3989e4aa24#npm:5.0.0-beta2"],
             ["turbolinks", "npm:5.2.0"],
             ["webpack", "virtual:a47e05dd1fd8db63d7735b455172b9cf128837ae13242d435e1aceb413b7c65b9be95497445a39cb9e3f21acb88bfa781a8d8050694ec67095cc1f3989e4aa24#npm:4.46.0"],
             ["webpack-cli", "virtual:a47e05dd1fd8db63d7735b455172b9cf128837ae13242d435e1aceb413b7c65b9be95497445a39cb9e3f21acb88bfa781a8d8050694ec67095cc1f3989e4aa24#npm:3.3.12"],
@@ -2189,6 +2191,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@popperjs/core", [
+        ["npm:2.0.0-alpha.1", {
+          "packageLocation": "./.yarn/cache/@popperjs-core-npm-2.0.0-alpha.1-9c822eecfd-531534f7b0.zip/node_modules/@popperjs/core/",
+          "packageDependencies": [
+            ["@popperjs/core", "npm:2.0.0-alpha.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@rails/actioncable", [
         ["npm:6.1.4", {
           "packageLocation": "./.yarn/cache/@rails-actioncable-npm-6.1.4-0b7207789c-9682388672.zip/node_modules/@rails/actioncable/",
@@ -3215,6 +3226,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["bootstrap", [
+        ["npm:5.0.0-beta2", {
+          "packageLocation": "./.yarn/cache/bootstrap-npm-5.0.0-beta2-177c34ecde-fcdeaf6d4a.zip/node_modules/bootstrap/",
+          "packageDependencies": [
+            ["bootstrap", "npm:5.0.0-beta2"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:a47e05dd1fd8db63d7735b455172b9cf128837ae13242d435e1aceb413b7c65b9be95497445a39cb9e3f21acb88bfa781a8d8050694ec67095cc1f3989e4aa24#npm:5.0.0-beta2", {
+          "packageLocation": "./.yarn/__virtual__/bootstrap-virtual-25ae24871a/0/cache/bootstrap-npm-5.0.0-beta2-177c34ecde-fcdeaf6d4a.zip/node_modules/bootstrap/",
+          "packageDependencies": [
+            ["bootstrap", "virtual:a47e05dd1fd8db63d7735b455172b9cf128837ae13242d435e1aceb413b7c65b9be95497445a39cb9e3f21acb88bfa781a8d8050694ec67095cc1f3989e4aa24#npm:5.0.0-beta2"],
+            ["@popperjs/core", "npm:2.0.0-alpha.1"],
+            ["@types/popperjs__core", null]
+          ],
+          "packagePeers": [
+            "@popperjs/core",
+            "@types/popperjs__core"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["brace-expansion", [
         ["npm:1.1.11", {
           "packageLocation": "./.yarn/cache/brace-expansion-npm-1.1.11-fb95eb05ad-faf34a7bb0.zip/node_modules/brace-expansion/",
@@ -3662,10 +3695,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["citizen-control", "workspace:."],
+            ["@popperjs/core", "npm:2.0.0-alpha.1"],
             ["@rails/actioncable", "npm:6.1.4"],
             ["@rails/activestorage", "npm:6.1.4"],
             ["@rails/ujs", "npm:6.1.4"],
             ["@rails/webpacker", "npm:5.4.3"],
+            ["bootstrap", "virtual:a47e05dd1fd8db63d7735b455172b9cf128837ae13242d435e1aceb413b7c65b9be95497445a39cb9e3f21acb88bfa781a8d8050694ec67095cc1f3989e4aa24#npm:5.0.0-beta2"],
             ["turbolinks", "npm:5.2.0"],
             ["webpack", "virtual:a47e05dd1fd8db63d7735b455172b9cf128837ae13242d435e1aceb413b7c65b9be95497445a39cb9e3f21acb88bfa781a8d8050694ec67095cc1f3989e4aa24#npm:4.46.0"],
             ["webpack-cli", "virtual:a47e05dd1fd8db63d7735b455172b9cf128837ae13242d435e1aceb413b7c65b9be95497445a39cb9e3f21acb88bfa781a8d8050694ec67095cc1f3989e4aa24#npm:3.3.12"],
