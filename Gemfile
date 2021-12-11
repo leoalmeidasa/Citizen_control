@@ -35,6 +35,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'dotenv-rails', '~> 2.5'
 # This gem is a port of Perl's Data::Faker library that generates fake data.
 gem 'faker'
+# A Ruby gem for communicating with the Twilio API and generating TwiML
+gem 'twilio-ruby'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
