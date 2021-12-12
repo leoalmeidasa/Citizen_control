@@ -5904,6 +5904,14 @@
   "resolved" "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
   "version" "2.1.2"
 
+"sass-loader@^12.4.0":
+  "integrity" "sha512-7xN+8khDIzym1oL9XyS6zP6Ges+Bo2B2xbPrjdMHEYyV3AQYhd/wXeru++3ODHF0zMjYmVadblSKrPrjEkL8mg=="
+  "resolved" "https://registry.npmjs.org/sass-loader/-/sass-loader-12.4.0.tgz"
+  "version" "12.4.0"
+  dependencies:
+    "klona" "^2.0.4"
+    "neo-async" "^2.6.2"
+
 "sass-loader@10.1.1":
   "integrity" "sha512-W6gVDXAd5hR/WHsPicvZdjAWHBcEJ44UahgxcIE196fW2ong0ZHMPO1kZuI5q0VlvMQZh32gpv69PLWQm70qrw=="
   "resolved" "https://registry.npmjs.org/sass-loader/-/sass-loader-10.1.1.tgz"
@@ -6943,7 +6951,7 @@
     "source-list-map" "^2.0.0"
     "source-map" "~0.6.1"
 
-"webpack@^4.0.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.36.0 || ^5.0.0", "webpack@^4.4.0", "webpack@^4.46.0", "webpack@>=2", "webpack@>=4.4.0", "webpack@4.x.x":
+"webpack@^4.0.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.36.0 || ^5.0.0", "webpack@^4.4.0", "webpack@^4.46.0", "webpack@^5.0.0", "webpack@>=2", "webpack@>=4.4.0", "webpack@4.x.x":
   "integrity" "sha512-6jJuJjg8znb/xRItk7bkT0+Q7AHCYjjFnvKIWQPkNIOyRqoCGvkOs0ipeQzrqz4l5FtN5ZI/ukEHroeX/o1/5Q=="
   "resolved" "https://registry.npmjs.org/webpack/-/webpack-4.46.0.tgz"
   "version" "4.46.0"
