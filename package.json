@@ -18,12 +18,5 @@
     "sass": "1.32.*",
     "sass-loader": "^12.4.0",
     "webpack-dev-server": "^3"
-  },
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "deploy": "npm install sass-loader && npm run build && npm run start"
   }
 }
