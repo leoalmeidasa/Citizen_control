@@ -5915,7 +5915,14 @@
     "schema-utils" "^3.0.0"
     "semver" "^7.3.2"
 
-"sass@^1.3.0", "sass@^1.38.0":
+"sass@^1.3.0", "sass@1.32.*":
+  "integrity" "sha512-dEgI9nShraqP7cXQH+lEXVf73WOPCse0QlFzSD8k+1TcOxCMwVXfQlr0jtoluZysQOyJGnfr21dLvYKDJq8HkA=="
+  "resolved" "https://registry.npmjs.org/sass/-/sass-1.32.13.tgz"
+  "version" "1.32.13"
+  dependencies:
+    "chokidar" ">=3.0.0 <4.0.0"
+
+"sass@^1.38.0":
   "integrity" "sha512-ONy5bjppoohtNkFJRqdz1gscXamMzN3wQy1YH9qO2FiNpgjLhpz/IPRGg0PpCjyz/pWfCOaNEaiEGCcjOFAjqw=="
   "resolved" "https://registry.npmjs.org/sass/-/sass-1.45.0.tgz"
   "version" "1.45.0"
