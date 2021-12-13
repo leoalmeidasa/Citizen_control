@@ -58,7 +58,7 @@
         <td><%= address.city %></td>
         <td><%= address.UF %></td>
         <td><%= address.IBGE_code %></td>
-        <td><%= address.citizen_id %></td>
+        <td><%= address.citizen.name %></td>
         <td><%= link_to 'Show', address %></td>
         <td><%= link_to 'Edit', edit_address_path(address) %></td>
         <td><%= link_to 'Destroy', address, method: :delete, data: { confirm: 'Are you sure?' } %></td>

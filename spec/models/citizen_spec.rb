@@ -12,6 +12,5 @@ RSpec.describe Citizen, type: :model do
     it { should validate_presence_of(:email) }
     it { should validate_presence_of(:birth_date) }
     it { should validate_presence_of(:telephone) }
-    it { should validate_presence_of(:status) }
   end
 end
